@@ -7,21 +7,44 @@
 }
 .titulo{
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 50px;
     font-style: italic;
-    text-shadow: 0px 5px 10px black;
+    text-shadow: 1px 10px 20px black;
+    -webkit-text-stroke: 0.1px black;
 }
-.fondo{
-    background-image: url(codigo.jpg);
+.cont{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.foto{
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    box-shadow: 0px 2px 20px black;    
+}
+
+header{
+    background-image: url(fotos/codigo.jpg);
     background-position: center;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-size:cover;
     background-repeat: no-repeat;
     text-align: center;
     margin-bottom: 50px;
+    border-radius: 2px;
+}
+.transparente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.364);
+    width: 40%;
+    height: 45%;
 }
 .me{
     color: black;
@@ -30,19 +53,32 @@
 }
 .flecha{
     display: flex;
+    width: 100%;
+    height: 100px;
     margin-top: 50px;
     gap: 50px;
     justify-content: center;
     flex-direction: row;
+    
+}
+.flechas{
+    animation: 5s infinite alternate arriba_abajo;
 }
 .fl{
     width: 50px;
     height: 50px;
+    
+}
+@keyframes arriba_abajo {
+    0%{margin-top: 50px;} 
+    50%{margin-top: 100px;}
+    100%{margin-top: 50px;}    
 }
 .pie{
     color: white;
     margin-top: 100px;
-    background-image: linear-gradient(to left, gray,white,lightgray,black);
+    background-image: linear-gradient(to left, blue,white,lightblue);
+    border-radius: 10px;
     height: 200px;
 }
 .contact{
@@ -59,11 +95,12 @@
     justify-content: center;
 }
 .icon{
-    width: 50px;
+    width: 55px;
 }
 .info{
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 .fotos{
     margin-top: 50px;
@@ -76,16 +113,49 @@
 }
 .img{
     border: solid 1px black;
-    box-shadow: 0px 10px 10px black;
     border-radius: 100px;
     height: 90px;
     width: 90px;
+    animation: 10s alternate infinite cambiodecolor;
+    transition: all .2s ease-out;
+}
+@keyframes cambiodecolor {
+    0%{box-shadow: 0px 10px 10px blue;}
+    50%{box-shadow: 0px 10px 10px lightblue;}
+    100%{box-shadow: 0px 10px 10px aqua;}
+}
+
+@media screen and (min-width:350px){
+    .fotos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .transparente{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color:rgba(255, 255, 255, 0.364);
+        width: 100%;
+        height: 55%;
+    }
 }
 
 @media screen and (min-width:480px){
     .fotos{
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
     }
+.transparente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.364);
+    width: 30%;
+    height: 55%;
+}
+
 }
