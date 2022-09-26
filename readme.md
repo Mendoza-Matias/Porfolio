@@ -1,5 +1,8 @@
-# Porfolio personal 
-## Mendoza Matias Ezequiel
+#Bienvenidos
 
-Buenas el siguiente trabajo es un pequeño modelo de porfolio personal en donde me presento y muestro mis skill , cuento un poco sobre mi y dejo mi contacto para que se puedan comunicar personalmente conmigo.
-Desde ya muchas gracias y espero que les gusta.
+😎Mi nombre es matias te presento mi portafolio personal con los lenguajes de programación que manejo y mi información de contacto, espero que te guste y proximamente se vendran mejoras.
+Asi que no te las pierdas😃 
+✨Saludos y espero tu mensaje✨ 
+
+Correo:mendoza.matias.ezequiel.01@gmail.com
+
